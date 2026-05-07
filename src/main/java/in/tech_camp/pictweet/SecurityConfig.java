@@ -27,7 +27,7 @@ public class SecurityConfig {
                 .cors(cors -> cors
                         .configurationSource(request -> {
                             var corsConfiguration = new org.springframework.web.cors.CorsConfiguration();
-                            corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000"));
+                            corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000", "https://pictweet-nextjs-front.vercel.app"));
                             corsConfiguration
                                     .setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
                             corsConfiguration.setAllowCredentials(true);
